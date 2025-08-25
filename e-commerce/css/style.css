@@ -55,6 +55,59 @@ nav {
     color: #251f15;
 }
 
+.bolsa-modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 350px;
+    height: 50%;
+    background: #fff;
+    box-shadow: -2px 0 12px rgba(0,0,0,0.15);
+    z-index: 9999;
+    transition: right 0.3s;
+}
+
+.bolsa-modal.active {
+    display: block;
+}
+.bolsa-modal h2 {
+    padding-bottom: 5px;
+    margin: 0;
+}
+.bolsa-content {
+    font-size: 0.8rem;
+    padding: 32px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+}
+
+#bolsaLista {
+    flex: 1;
+    overflow-y: auto;
+    margin-bottom: 16px;
+}
+
+#fecharBolsa {
+    font-family: "Poppins", sans-serif;
+    font-size: 0.8rem;
+    background-color: #ffffff00;
+    color: #000000;
+    border: 3px solid #000000;
+    padding: 5px 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-top: 0;
+    margin-bottom: 50px;
+}
+#fecharBolsa:hover {
+    color: white;
+    background-color: #000000;
+    transition: 0.5s;
+}
+
 .hero {
     top: 10px;
     display: flex;

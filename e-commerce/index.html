@@ -26,7 +26,7 @@
             <div class="logo"><a href="index.html">Étoile le Fleur*</a></div>
             <ul class="menu">
                 <li><a href="index.html">Home</a></li>
-                <li><a href="bolsa.html">Bolsa</a></li>
+                <li><a href="" id="abrirBolsa">Bolsa</a></li>
             </ul>
         </nav>
     </header>
@@ -59,14 +59,16 @@
                 <img src="imgs/gats.webp" alt="tenis">
                 <div class="info-produto">
                     <h3>Étoile Gats 43</h3>
-                    <button>adicione à bolsa</button>
+                    <p class="preco">R$ 1399,90</p>
+                    <button class="adicionar-bolsa" data-id="1">adicione à bolsa</button>
                 </div>
             </div>
             <div class="produto">
                 <img src="imgs/le fleur.webp" alt="sapato">
                 <div class="info-produto">
-                    <h3>Étoile Gats 45</h3>
-                    <button>adicione à bolsa</button>
+                    <h3>Étoile Gats 43</h3>
+                    <p class="preco">R$ 1399,90</p>
+                    <button class="adicionar-bolsa" data-id="2">adicione à bolsa</button>
                 </div>
             </div>
         </section>
@@ -105,7 +107,7 @@
                 <ul class="footer-list">
                     <li>
                         <i class="fa-solid fa-location-dot"></i>
-                        123 Rue de la Mode, Paris, França
+                        123 Rua Pomerode, Florianópolis, Brasil
                     </li>
                 </ul>
             </div>
@@ -129,12 +131,12 @@
         </div>
     </footer>
     <div id="bolsaModal" class="bolsa-modal">
-        <div class="bolsa-content">
-            <h2>Sua Bolsa</h2>
-            <ul id="bolsaLista"></ul>
-            <button id="fecharBolsa">Fechar</button>
-        </div>
+    <div class="bolsa-content">
+        <h2>Sua Bolsa</h2>
+        <ul id="bolsaLista"></ul>
+        <button id="fecharBolsa">Fechar</button>
     </div>
+</div>
 
     <script src="js/script.js"></script>
 </body>

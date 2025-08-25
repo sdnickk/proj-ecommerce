@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Étoile le Fleur* Feminino</title>
+    <title>Étoile le Fleur* - Feminino</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -21,7 +21,7 @@
             <div class="logo"><a href="index.html">Étoile le Fleur*</a></div>
             <ul class="menu">
                 <li><a href="index.html">Home</a></li>
-                <li><a href="bolsa.html">Bolsa</a></li>
+                <li><a href="#" id="abrirBolsa">Bolsa</a></li>
             </ul>
         </nav>
     </header>
@@ -40,35 +40,35 @@
         <section class="coleções">
             <h1 class="titulo-colecoes">Coleção Feminina SS 2025</h1>
             <div class="colecao-lista-produtos">
-                <div class="colecao-produtos">
-                    <img src="imgs/dress.webp" alt="Vestido Feminino" class="troca-img"
-                        data-hover="imgs/dress-hover.webp" data-original="imgs/dress.webp">
-                    <a href="">ÉTOILE DRESS</a>
-                    <span class="preco">R$ 1200,00</span>
-                    <button>adicione a bolsa</button>
-                </div>
-                <div class="colecao-produtos">
-                    <img src="imgs/women-jeans2.webp" alt="Calça Jeans Feminina" class="troca-img"
-                        data-hover="imgs/women-jeans2-hover.webp" data-original="imgs/women-jeans2.webp">
-                    <a href="">ÉTOILE WOMEN'S JEANS</a>
-                    <span class="preco">R$ 800,00</span>
-                    <button>adicione a bolsa</button>
-                </div>
-                <div class="colecao-produtos">
-                    <img src="imgs/cardigan.webp" alt="Cardigan Feminino" class="troca-img"
-                        data-hover="imgs/cardigan-hover.webp" data-original="imgs/cardigan.webp">
-                    <a href="">ÉTOILE CARDIGAN</a>
-                    <span class="preco">R$ 1899,00</span>
-                    <button>adicione a bolsa</button>
-                </div>
-                <div class="colecao-produtos">
-                    <img src="imgs/women-jeans.webp" alt="Calça Jeans Feminina" class="troca-img"
-                        data-hover="imgs/women-jeans-hover.webp" data-original="imgs/women-jeans.webp">
-                    <a href="">ÉTOILE WOMEN'S JEANS</a>
-                    <span class="preco">R$ 299,00</span>
-                    <button>adicione a bolsa</button>
-                </div>
-            </div>
+    <div class="colecao-produtos">
+        <img src="imgs/dress.webp" alt="Vestido Feminino" class="troca-img"
+            data-hover="imgs/dress-hover.webp" data-original="imgs/dress.webp">
+        <a href="">ÉTOILE DRESS</a>
+        <span class="preco">R$ 1200,00</span>
+        <button class="adicionar-bolsa" data-id="7">adicione à bolsa</button>
+    </div>
+    <div class="colecao-produtos">
+        <img src="imgs/women-jeans2.webp" alt="Calça Jeans Feminina" class="troca-img"
+            data-hover="imgs/women-jeans2-hover.webp" data-original="imgs/women-jeans2.webp">
+        <a href="">ÉTOILE WOMEN'S JEANS</a>
+        <span class="preco">R$ 800,00</span>
+        <button class="adicionar-bolsa" data-id="8">adicione à bolsa</button>
+    </div>
+    <div class="colecao-produtos">
+        <img src="imgs/cardigan.webp" alt="Cardigan Feminino" class="troca-img"
+            data-hover="imgs/cardigan-hover.webp" data-original="imgs/cardigan.webp">
+        <a href="">ÉTOILE CARDIGAN</a>
+        <span class="preco">R$ 1899,00</span>
+        <button class="adicionar-bolsa" data-id="9">adicione à bolsa</button>
+    </div>
+    <div class="colecao-produtos">
+        <img src="imgs/women-jeans.webp" alt="Calça Jeans Feminina" class="troca-img"
+            data-hover="imgs/women-jeans-hover.webp" data-original="imgs/women-jeans.webp">
+        <a href="">ÉTOILE WOMEN'S JEANS</a>
+        <span class="preco">R$ 299,00</span>
+        <button class="adicionar-bolsa" data-id="10">adicione à bolsa</button>
+    </div>
+</div>
         </section>
     </main>
 
@@ -92,7 +92,7 @@
                 <ul class="footer-list">
                     <li>
                         <i class="fa-solid fa-location-dot"></i>
-                        123 Rue de la Mode, Paris, França
+                        123 Rua Pomerode, Florianópolis, Brasil
                     </li>
                 </ul>
             </div>
@@ -115,6 +115,13 @@
             <p>&copy; 2025 Étoile le Fleur*. Todos os direitos reservados.</p>
         </div>
     </footer>
+    <div id="bolsaModal" class="bolsa-modal">
+    <div class="bolsa-content">
+        <h2>Sua Bolsa</h2>
+        <ul id="bolsaLista"></ul>
+        <button id="fecharBolsa">Fechar</button>
+    </div>
+</div>
     <script src="js/script.js"></script>
 </body>
 

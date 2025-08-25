@@ -11,7 +11,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cormorant:ital,wght@0,300..700;1,300..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
-    <title>Étoile le Fleur* Masculino</title>
+    <title>Étoile le Fleur* - Masculino</title>
 </head>
 <body>
     <header>
@@ -23,7 +23,7 @@
             <div class="logo"><a href="index.html">Étoile le Fleur*</a></div>
             <ul class="menu">
                 <li><a href="index.html">Home</a></li>
-                <li><a href="bolsa.html">Bolsa</a></li>
+                <li><a href="#" id="abrirBolsa">Bolsa</a></li>
             </ul>
         </nav>
     </header>
@@ -42,43 +42,43 @@
         <section class="coleções">
             <h1 class="titulo-colecoes">Coleção Masculina 2025</h1>
             <div class="colecao-lista-produtos">
-                <div class="colecao-produtos">
-                    <img src="imgs/puffer-men.webp" alt="Casaco Masculino" 
-                    class="troca-img"
-                    data-hover="imgs/puffer-men-hover.webp"
-                    data-original="imgs/puffer-men.webp">
-                    <a href="">ÉTOILE DOWN JACKET</a>
-                    <span class="preco">R$ 1200,00</span>
-                    <button>adicione a bolsa</button>
-                </div>
-                <div class="colecao-produtos">
-                    <img src="imgs/cargo-men.webp" alt="Calça Cargo Masculina"
-                    class="troca-img"
-                    data-hover="imgs/cargo-men-hover.webp"
-                    data-original="imgs/cargo-men.webp">
-                    <a href="">ÉTOILE CARGO PANTS</a>
-                    <span class="preco">R$ 800,00</span>
-                    <button>adicione a bolsa</button>
-                </div>
-                <div class="colecao-produtos">
-                    <img src="imgs/button-up.jpg" alt="Camisa de botão masculina"
-                    class="troca-img"
-                    data-hover="imgs/button-up-hover.jpg"
-                    data-original="imgs/button-up.jpg">
-                    <a href="">ÉTOILE LEATHER BOMBER JACKET</a>
-                    <span class="preco">R$ 1899,00</span>
-                    <button>adicione a bolsa</button>
-                </div>
-                <div class="colecao-produtos">
-                    <img src="imgs/flannel.jpg" alt="Camisa de Flanela Masculina"
-                    class="troca-img"
-                    data-hover="imgs/flannel-hover.jpg"
-                    data-original="imgs/flannel.jpg">
-                    <a href="">ÉTOILE FLANNEL SHIRT</a>
-                    <span class="preco">R$ 299,00</span>
-                    <button>adicione a bolsa</button>
-                </div>
-            </div>
+    <div class="colecao-produtos">
+        <img src="imgs/puffer-men.webp" alt="Casaco Masculino" 
+        class="troca-img"
+        data-hover="imgs/puffer-men-hover.webp"
+        data-original="imgs/puffer-men.webp">
+        <a href="">ÉTOILE DOWN JACKET</a>
+        <span class="preco">R$ 1200,00</span>
+        <button class="adicionar-bolsa" data-id="3">adicione à bolsa</button>
+    </div>
+    <div class="colecao-produtos">
+        <img src="imgs/cargo-men.webp" alt="Calça Cargo Masculina"
+        class="troca-img"
+        data-hover="imgs/cargo-men-hover.webp"
+        data-original="imgs/cargo-men.webp">
+        <a href="">ÉTOILE CARGO PANTS</a>
+        <span class="preco">R$ 800,00</span>
+        <button class="adicionar-bolsa" data-id="4">adicione à bolsa</button>
+    </div>
+    <div class="colecao-produtos">
+        <img src="imgs/button-up.jpg" alt="Camisa de botão masculina"
+        class="troca-img"
+        data-hover="imgs/button-up-hover.jpg"
+        data-original="imgs/button-up.jpg">
+        <a href="">ÉTOILE LEATHER BOMBER JACKET</a>
+        <span class="preco">R$ 1899,00</span>
+        <button class="adicionar-bolsa" data-id="5">adicione à bolsa</button>
+    </div>
+    <div class="colecao-produtos">
+        <img src="imgs/flannel.jpg" alt="Camisa de Flanela Masculina"
+        class="troca-img"
+        data-hover="imgs/flannel-hover.jpg"
+        data-original="imgs/flannel.jpg">
+        <a href="">ÉTOILE FLANNEL SHIRT</a>
+        <span class="preco">R$ 299,00</span>
+        <button class="adicionar-bolsa" data-id="6">adicione à bolsa</button>
+    </div>
+</div>
         </section>
     </main>
 
@@ -102,7 +102,7 @@
                 <ul class="footer-list">
                     <li>
                         <i class="fa-solid fa-location-dot"></i>
-                        123 Rue de la Mode, Paris, França
+                        123 Rua Pomerode, Florianópolis, Brasil
                     </li>
                 </ul>
             </div>
@@ -125,6 +125,13 @@
             <p>&copy; 2025 Étoile le Fleur*. Todos os direitos reservados.</p>
         </div>
     </footer>
+    <div id="bolsaModal" class="bolsa-modal">
+    <div class="bolsa-content">
+        <h2>Sua Bolsa</h2>
+        <ul id="bolsaLista"></ul>
+        <button id="fecharBolsa">Fechar</button>
+    </div>
+</div>
     <script src="js/script.js"></script>
 </body>
 </html>
